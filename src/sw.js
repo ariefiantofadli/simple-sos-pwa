@@ -1,9 +1,12 @@
-var cacheName = 'simple_sos';
+// var cacheName = 'simple_sos'; // 20191020
+var cacheName = 'simple_sos_2'; // 20191021
+
 var filesToCache = [
   '/',
   '/index.html',
   '/style.css'
 ];
+
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
@@ -13,9 +16,11 @@ self.addEventListener('install', function(e) {
     })
   );
 });
+
 self.addEventListener('activate',  event => {
   event.waitUntil(self.clients.claim());
 });
+
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request, {ignoreSearch:true}).then(response => {

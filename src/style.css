@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
   height: 100%;
   margin: 0;
@@ -9,6 +11,10 @@ body {
   width: 100vw;
   display: flex;
   margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+
 }
 
 .container {

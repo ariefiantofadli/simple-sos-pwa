@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- iOS favico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/simple_sos_180.png">
+
     <!-- CSS Files  -->
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
 
@@ -23,6 +26,7 @@
         <p class="content">S.O.S</p>
     </div>
 
+    <!-- Background switch/blink -->
     <script>
         setInterval(function () {
             $("#divtoBlink").css("background-color", function () {
@@ -30,8 +34,9 @@
                 return this.switch ? "#000" : ""
             });
         }, 300)
-    </script>
+        </script>
 
+    <!-- Full screen when onTap in browser -->
     <script>
         var fullScreen = document.getElementById("full");
         fullScreen.addEventListener("click", function () {
@@ -39,7 +44,7 @@
         }, false);
     </script>
 
-
+    <!-- Register Serviceworder -->
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
