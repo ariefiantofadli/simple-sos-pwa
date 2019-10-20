@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  align-items: center;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+#divtoBlink {
+  background-color: #ff0000;
+}
+
+
+.content {
+  font-size: 25.5vw;
+  text-align: center;
+}
